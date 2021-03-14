@@ -1,0 +1,25 @@
+/* Quiz body */
+#quiz {
+    text-align: center;
+}
+
+/* View Score */
+.left {
+    text-align: left;
+}
+
+/* quiz timer */
+.right {
+    text-align: right;
+}
+
+button {
+    background-color: blue;
+    font-weight: bold;
+    color: white;
+}
+
+button:hover {
+    transition: 0.5s;
+    background-color: green;
+}

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Code Quiz</title>
+  <link rel="stylesheet" href="./assets/css,/style.css">
+</head>
+
+<body>
+    <div id="nav">
+        <!-- view final score to left corner -->
+        <div class="left corner">
+            <h5>View Highscore</h5>
+            <!-- countdown timer -->
+        <div class="right corner">
+            <h5>Time: <span id="timeLeft">0</span></h5>
+        </div>
+        </div>
+    </div>
+    <main>
+      <div id="quiz" class="page tittle">
+        <h1>
+            Coding Quiz Challenge
+        </h1>
+        <p>
+            Try to answer the following code-related questions whithin the time limit.<br>
+            Keep in mind that incorrect answers will penalize your score/time<br>
+             by ten seconds!
+        </p>
+        <button onclick="start()">Start Quiz</button>
+      </div>
+    </main>
+
+  <script src="./assets/js/script.js"></script>
+</body>
+
+</html>
