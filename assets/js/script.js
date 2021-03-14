@@ -4,6 +4,7 @@ var timer;
 var score =0;
 var currentQuestion = -1;
 
+// set of questions and answers
 var questions = [{
       title: "Commonly used data types Do Not Include:",
       choices: ["strings", "alerts", "booleans", "numbers"],
@@ -69,7 +70,7 @@ function setScore() {
     localStorage.setItem("highscoreName",  document.getElementById('name').value);
     viewScore();
 }
-
+// viewscore function
 function viewScore() {
     var quizContent = `
     <h2>` + localStorage.getItem("highscoreName") + `'s highscore is:</h2>
@@ -79,7 +80,7 @@ function viewScore() {
 
     document.getElementById("quiz").innerHTML = quizContent;
 }
-
+// clear score to reset game
 function clearScore() {
     localStorage.setItem("highscore", "");
     localStorage.setItem("highscoreName",  "");
@@ -121,7 +122,7 @@ function incorrect() {
     timeLeft -= 15; 
     next();
 }
-
+// function to start loop of questions
 function next() {
     currentQuestion++;
 
